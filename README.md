@@ -19,6 +19,10 @@ doScript (runs commands typed after it if ther'e seperated by /nl/ eg: "doScript
   #run (runs a script saved in MacroFiles folder, "run nameOfScript")
   
   stop/#stop (stops the current script from running)
+  
+  #list (lists all scripts)
+  
+  #del (removes a script)
 
 
 Scripts are run one command at a time, each command is sepperated by /nl/ to simbolize a new line, using the formatter
