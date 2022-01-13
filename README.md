@@ -55,22 +55,15 @@ formatted and saves into a txt file in your MacroFiles folder (which again.. is 
 where you write all you code, its written line by line, empty lines and comments (prefixed with a "::"), this is an example:
 
 ::greet everyone.
-
 say hi
 wait 1
 
 ::jump and crouch at the same time.
-
 jump
-
 crouch
-
 wait 0.5
-
 stopCrouch
 
-
 ::say goodbye ;-;.
-
 say bye
 
