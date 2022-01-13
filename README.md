@@ -52,19 +52,4 @@ In the initial window there three boxes (well.. one box and two buttons) on the 
 formats your script (by putting those annoying /nl/'s in there) for you and pastes it into your clipboard. Second you'll see a
 "Save to Script" button, this pulls up a prompt which asks for a name for your script, when you hit "Save" the script will be
 formatted and saves into a txt file in your MacroFiles folder (which again.. is in your .minecraft folder). The third box is
-where you write all you code, its written line by line, empty lines and comments (prefixed with a "::"), this is an example:
-
-::greet everyone.\n
-say hi\n
-wait 1\n
-
-::jump and crouch at the same time.\n
-
-jump\n
-crouch\n
-wait 0.5\n
-stopCrouch\n
-
-::say goodbye ;-;.\n
-say bye
-
+where you write all you code, its written line by line, empty lines and comments (prefixed with a "::").
