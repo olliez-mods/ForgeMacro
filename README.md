@@ -17,6 +17,8 @@ doScript (runs commands typed after it if ther'e seperated by /nl/ eg: "doScript
   load (loads a script into your MacroFiles folder, "load nameOfScript start/nl/wait 1/nl/say stopped")
   
   run (runs a script saved in MacroFiles folder, "run nameOfScript")
+  
+  stop (stops the current script from running)
 
 
 Scripts are run one command at a time, each command is sepperated by /nl/ to simbolize a new line, using the formatter
