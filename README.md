@@ -58,7 +58,7 @@ where you write all you code, its written line by line, empty lines and comments
 say hi
 wait 1
 
-::jump and crouch at the same time
+::jump and crouch at the same time.
 jump
 crouch
 wait 0.5
