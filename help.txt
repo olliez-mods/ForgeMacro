@@ -77,6 +77,14 @@ used:
 	say this_is_an_example
 
 
+NOTE:
+	Does the same thing as "say" (see above) except only
+	you can see the message, usefull on servers when you 
+	don't want others to see updates on your script
+used:
+	note just_turned_left
+
+
 MOUSEDOWN:
 	holds down left click, mostly used for
 	breaking blocks
