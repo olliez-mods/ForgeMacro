@@ -1,0 +1,141 @@
+CLICK:
+	simulates left click
+used:
+	click
+
+
+RCLICK:
+	simulates right click
+used:
+	rightClick
+
+
+MOVE:
+	adds movement to player in one of four directions
+	(up, down, left, right)
+used:
+	move up
+
+
+STOPMOVE:
+	cancels movement in one of four directions
+	(up, down, left, right)
+used:
+	stopMove up
+
+
+CROUCH:
+	makes the player crouch
+	(player will stay crouching)
+used:
+	crouch
+
+
+STOPCROUCH:
+	makes the player stop crouching
+used:
+	stopCrouch
+
+
+SPRINT
+	makes the player sprint
+	(player will stay sprinting)
+used:
+	sprint
+
+
+STOPSPRINT:
+	makes the player stop sprinting
+used:
+	stopSprint
+
+
+STOPALL:
+	stops ALL player movement
+used:
+	stopAll
+
+
+WAIT:
+	pauses entire program for x amount of seconds
+	(decimals ARE allowed)
+used:
+	wait 5
+
+
+REPEAT:
+	starts program over begining with the first line
+used:
+	repeat
+
+
+SAY:
+	will type out a message in chat
+	NOTE: DO NOT use spaces, use _ instead
+	all _ will be replaced with spaces in execution
+used:
+	say this_is_an_example
+
+
+MOUSEDOWN:
+	holds down left click, mostly used for
+	breaking blocks
+used:
+	mouseDown
+
+
+MOUSEUP:
+	lets go of left lcick
+used:
+	mouseUp
+
+
+RMOUSEDOWN
+	will hold down the right mouse button until 
+	told to let go
+used:
+	RmouseDown
+
+
+
+RMOUSEUP:
+	will let go of the right mouse button if 
+	holding down
+used:
+	RmouseUp	
+
+
+END:
+	stops the script
+used:
+	end
+
+
+FREEMOUSE:
+	frees the mouse from the minecraft window
+	usefull for running scripts in the backround
+	(If you find that you minecraft is still pausing
+	when you select another window, make sure to do
+	f3 + p in mincraft and make sure its disabled)
+used:
+	freeMouse
+
+
+ONCE:
+	will only run once even if repeated you can 
+	place almost any comand after it.
+	(in the example im moving the mouse to
+	100 200 once and then it wont be called again)
+used:
+	once move 100 200
+
+
+COUNTER:
+	counts up and when it reaches a set number 
+	it runs the command you set, the first number
+	is the goal and the second is the starting number
+	(you only need to set the starting number to 
+	something different if you want the comand to run
+	on startup or something)
+used:
+	counter 6 0 say this_has_been_6_times_yay!
