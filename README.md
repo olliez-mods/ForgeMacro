@@ -14,11 +14,11 @@ the interface is through chat there are several commands you can use such as:
 doScript (runs commands typed after it if ther'e seperated by /nl/ eg: "doScript say start/nl/wait 1/nl/say stopped"
   This has a limit of 256 charictors because of minmecrafts chat limit)
   
-  load (loads a script into your MacroFiles folder, "load nameOfScript start/nl/wait 1/nl/say stopped")
+  #load (loads a script into your MacroFiles folder, "load nameOfScript start/nl/wait 1/nl/say stopped")
   
-  run (runs a script saved in MacroFiles folder, "run nameOfScript")
+  #run (runs a script saved in MacroFiles folder, "run nameOfScript")
   
-  stop (stops the current script from running)
+  stop/#stop (stops the current script from running)
 
 
 Scripts are run one command at a time, each command is sepperated by /nl/ to simbolize a new line, using the formatter
