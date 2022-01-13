@@ -54,16 +54,17 @@ formats your script (by putting those annoying /nl/'s in there) for you and past
 formatted and saves into a txt file in your MacroFiles folder (which again.. is in your .minecraft folder). The third box is
 where you write all you code, its written line by line, empty lines and comments (prefixed with a "::"), this is an example:
 
-::greet everyone.
-say hi
-wait 1
+::greet everyone.\n
+say hi\n
+wait 1\n
 
-::jump and crouch at the same time.
-jump
-crouch
-wait 0.5
-stopCrouch
+::jump and crouch at the same time.\n
 
-::say goodbye ;-;.
+jump\n
+crouch\n
+wait 0.5\n
+stopCrouch\n
+
+::say goodbye ;-;.\n
 say bye
 
