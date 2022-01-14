@@ -119,6 +119,14 @@ used:
 	end
 
 
+RUN:
+	runs a script thats held in MacroFiles folder
+	used just like the #run command you use in chat.
+	stops current script.
+used:
+	run testscript
+
+
 FREEMOUSE:
 	frees the mouse from the minecraft window
 	usefull for running scripts in the backround
