@@ -1,0 +1,146 @@
+if/waitUntil:
+	if statement is used to check for a condition before running a command
+	it can be used in multipal ways, its format to be used is as follows:
+	"if [Condition] (Parameters) [toCheck against] [command to run]"
+	below is examples of the different ways to use an if command
+
+
+	1. if blockBelow yellow_wool say yellow_bellow_me!
+	blockBelow gets the block directly below the player. In this case
+	we're checking if its minecraft:yellow_wool (the program automaticly
+	puts the "minecraft:" part in so you only need to put "yellow_wool")
+
+	2. if blockOffset 1 0 stone say theres_stone_around_me
+	blockOffset checks the block at players cords + x, y (centerd around 
+	the players feet), in this case we are checking at +1 in the x direction
+	and +0 in the y direction, negative numbers are allowed.
+
+	3. if keydown jump say im_jumping
+	keyDown checks if a key is being held down (weather by the program or the user)
+	it only works with a predetermind list of keys (provided below).
+
+	But how does waitUntil work? it does the same thing that the if command does
+	except it pauses the entire program untill the condition is met, example?
+
+	say program_started
+	waitUntil keyDown jump say key_was_pressed
+	say program_finished
+
+	int this example the first line is run saying that th eporgram started, then the
+	ENTIRE program stops and waits unitll the jumping key (probably spacebar) is pressed
+	then it says key was pressed and continues on.
+
+List Of Valid Keys:
+	attack
+	use
+	forward
+	left
+	back
+	right
+	jump
+	sneak
+	sprint
+	drop
+	inventory
+	chat
+	playerlist
+	pickItem
+	command
+	socialInteractions
+	screenshot
+	togglePerspective
+	smoothCamera
+	fullscreen
+	spectatorOutlines
+	swapOffhand
+	saveToolbarActivator
+	loadToolbarActivator
+	advancements
+
+
+
+
+Functions :D
+	functions have finaly been added, a functions let you create a block of code to be run anywhere
+	(yes ANYWHERE even inside other functions) functions get loaded and saved before the script runs
+	and dont get run when there read thorugh by the program (confusing but read on my friend), first
+	thing ill do is explain the three ocmmands associated with functions: func, endFunc, runFunc.
+
+	func is where you name and begin a function:
+		func test_function
+
+	endFunc is the line that tells the porgram that the function is finished:
+		endFunc
+
+	runFunc is what allows you to run functions:
+		runFunc test_function
+
+	
+	to create a function the first thing you do is to define and name it:
+
+	  #start of script here
+
+	>>func test-func
+	  say hello_this
+	  say is a function
+	  endFunc
+
+	  wait 1
+	  runFunc test-func
+
+	  #end of script here
+
+
+
+
+	next you put all the code you want inside of the function:
+
+	  #start of script here
+
+	  func test-func
+	>>say hello_this
+	>>say is a function
+	  endFunc
+
+	  wait 1
+	  runFunc test-func
+
+	  #end of script here
+
+
+	then you make sure to end the function (important):
+
+	  #start of script here
+
+	  func test-func
+	  say hello_this
+	  say is a function
+	>>endFunc
+
+	  wait 1
+	  runFunc test-func
+
+	  #end of script here
+
+
+
+	then you can call it whenever you want and anything inside the function will be run
+
+	  #start of script here
+
+	  func test-func
+	  say hello_this
+	  say is_a_function
+	  endFunc
+
+	  wait 1
+	>>runFunc test-func
+
+	  #end of script here
+
+	expected output of whole script
+
+	>hello_this
+	>is a function
+
+	

@@ -63,6 +63,12 @@ used:
 	wait 5
 
 
+WAITTICK:
+	pauses entire program for set ammount of game ticks
+used:
+	waitTick 25
+
+
 REPEAT:
 	starts program over begining with the first line
 used:
@@ -146,6 +152,13 @@ used:
 	once move 100 200
 
 
+SETINVSLOT:
+	sets the current inventory slot (from 0-8)
+	if the number is above 8 nothing will happen
+used:
+	setInvSlot 6
+
+
 COUNTER:
 	counts up and when it reaches a set number 
 	it runs the command you set, the first number
@@ -155,3 +168,21 @@ COUNTER:
 	on startup or something)
 used:
 	counter 6 0 say this_has_been_6_times_yay!
+
+
+IF:
+	used to check for a condition, such as the block below you
+	or if a key is down. To see more details and how to use, see
+	advanced_commands.txt
+
+
+WAITUNTILL:
+	Pauses program untill a condition is met, such as the block below you
+	or if a key is down. To see more details and how to use, see
+	advanced_commands.txt
+
+
+FUNC, RUNFUNC, ENDFUNC:
+	used to define a block of code to be run at anytime during the program, 
+	just like the commands above, to see more details please read 
+	ADVANCED_COMMANDS.txt
