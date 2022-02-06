@@ -24,6 +24,20 @@ used:
 	stopMove up
 
 
+TILT:
+	tilts players head up, down, straight
+	those are the ONLY presets so far
+used:
+	tilt up
+
+
+LOOK:
+	makes player look left or right by 90 decrees
+	relative to where they are looking right now
+used:
+	look left
+
+
 CROUCH:
 	makes the player crouch
 	(player will stay crouching)
@@ -65,6 +79,7 @@ used:
 
 WAITTICK:
 	pauses entire program for set ammount of game ticks
+	(waitT can also be used)
 used:
 	waitTick 25
 
@@ -146,10 +161,8 @@ used:
 ONCE:
 	will only run once even if repeated you can 
 	place almost any comand after it.
-	(in the example im moving the mouse to
-	100 200 once and then it wont be called again)
 used:
-	once move 100 200
+	once say hey_there!
 
 
 SETINVSLOT:

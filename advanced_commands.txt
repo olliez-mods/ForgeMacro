@@ -1,3 +1,14 @@
+NOTE:
+if your finding that a command is to big to fit on one line put a "-" on the end and the start of 
+two lines to join them at run time.
+
+say hello_there_this_line_is-vee-
+-eery_big
+
+if keyDown left - (notice the space before the "-")
+-say left_is_pressed
+
+
 if/waitUntil:
 	if statement is used to check for a condition before running a command
 	it can be used in multipal ways, its format to be used is as follows:
@@ -10,10 +21,13 @@ if/waitUntil:
 	we're checking if its minecraft:yellow_wool (the program automaticly
 	puts the "minecraft:" part in so you only need to put "yellow_wool")
 
-	2. if blockOffset 1 0 stone say theres_stone_around_me
-	blockOffset checks the block at players cords + x, y (centerd around 
-	the players feet), in this case we are checking at +1 in the x direction
-	and +0 in the y direction, negative numbers are allowed.
+	2. if blockOffset 1 1 0 stone say theres_stone_around_me
+	blockOffset checks the block at players cords offset by cords provided (centerd around 
+	the players feet)
+	the first number is forwards/backwards
+	the second is up/down
+	the third is left/right
+	so in this example we are checking the block directly infront of the players head
 
 	3. if keydown jump say im_jumping
 	keyDown checks if a key is being held down (weather by the program or the user)
@@ -23,7 +37,7 @@ if/waitUntil:
 	except it pauses the entire program untill the condition is met, example?
 
 	say program_started
-	waitUntil keyDown jump say key_was_pressed
+	waitUntil keyDown jump
 	say program_finished
 
 	int this example the first line is run saying that th eporgram started, then the
