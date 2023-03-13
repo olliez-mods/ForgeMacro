@@ -1,28 +1,26 @@
-How to Use Mod: the interface is through chat or gui (gui use is below) there are several commands you can use such as:
-
-#doScript (runs commands typed after it if ther'e seperated by /nl/ eg: "doScript say start/nl/wait 1/nl/say stopped" 
-This has a limit of 256 charictors because of minmecrafts chat limit)
-
-#load (loads a script into your MacroFiles folder, "load nameOfScript start/nl/wait 1/nl/say stopped")
-
-#run (runs a script saved in MacroFiles folder, "run nameOfScript")
-
-#stop/stop (stops the current script from running)
-
-Scripts are run one command at a time, each command is sepperated by /nl/ to simbolize a new line, using the 
-editer you can convert easy to read scripts:
-
-say hi wait 1 jump crouch wait 0.5 stopCrouch say bye
-
-into functional code:
-
-say hi/nl/wait 1/nl/jump/nl/crouch/nl/wait 0.5/nl/stopCrouch/nl/say bye
-
-if you want a list of all the commands look at the help.txt file
+FORMAT OF THE SCRIPTS:
+  Each script is saved in your minecraft folder (MacroFiles) and the format is as follows:
+    a script is saved in a way that each command is seperated by "/nl/".
+    as long as each command is seperated by those charectors you're welcome to create your own editor.
 
 HOW TO USE EDITOR/GUI:
-type #e or #edit to access editer it will (hopefully) open a blank page
-theres 100 preset lines (hopefully you don't need more)
-you can load files from the MacroFiles folder (in your .minecraft folder)
-it is a bit glitchy as i coded it myself, but your welcome to create your own editor 
-because it just saves the scripts into the MacroFiles folder with the format shown above
+  type the command #e or #edit to access editer it will (hopefully) open a blank page
+  you can load files from the MacroFiles folder (in your .minecraft folder)
+  it is a bit glitchy as i coded it myself, but your welcome to create your own editor
+  It has cool synbtax highligting if you make a comment, a comment line starts with "#" eg. #this block makes you jump 5 times
+
+HOW TO USE WITHOUGHT GUI:
+  You can do most things withough the GUI so here are the commands to do so.
+  
+  #doScript (runs commands typed after it if ther'e seperated by /nl/ eg: "doScript say start/nl/wait 1/nl/say stopped" 
+  This has a limit of 256 charictors because of minmecrafts chat limit)
+
+  #load (loads a script into your MacroFiles folder, eg. "load nameOfScript start/nl/wait 1/nl/say stopped")
+
+  #run (runs a script saved in MacroFiles folder, "run nameOfScript")
+
+  #stop/stop (stops the current script from running)
+
+
+
+if you want a list of all the scripting commands look at the help.txt file
